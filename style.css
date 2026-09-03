@@ -1,16 +1,16 @@
 /* ==========================================================================
-   FLORA LAILY FLORICULTURA — PALETA BOTANICAL CREAM & ROSE BLOOM
-   Fundo: Soft Garden Cream (#fffdfa / #faf6f0)
-   Caixas / Cards: Pure White (#ffffff)
-   Destaques: Rose Bloom Red (#e11d48 / #f43f5e) + Botanical Green (#15803d)
+   FLORA LAILY FLORICULTURA — PALETA LOGO BEIGE & WHITE CARDS
+   Fundo Body: Beige da Logo (#cbb692 / #c9b48e)
+   Header & Cards: Pure White (#ffffff)
+   Destaques: Red Bloom (#c9182b / #d90429) & Botanical Green (#15803d)
    Tipografia: Playfair Display & Plus Jakarta Sans
    ========================================================================== */
 
 :root {
-  --color-primary: #e11d48;
-  --color-primary-dark: #be123c;
-  --color-primary-light: #f43f5e;
-  --color-primary-border: rgba(225, 29, 72, 0.15);
+  --color-primary: #c9182b;
+  --color-primary-dark: #a61021;
+  --color-primary-light: #e0283c;
+  --color-primary-border: rgba(201, 24, 43, 0.18);
   
   --color-green: #15803d;
   --color-green-dark: #166534;
@@ -18,13 +18,13 @@
   --color-whatsapp: #25d366;
   --color-whatsapp-hover: #1eb954;
 
-  --color-bg: #fffdfa;        /* SOFT BOTANICAL CREAM FUNDO */
-  --color-bg-alt: #faf6f0;    /* BOTANICAL LIGHT ALTERNADO */
-  --color-card: #ffffff;      /* CARDS BRANCOS */
-  --color-card-border: rgba(225, 29, 72, 0.12);
+  --color-bg: #cbb692;        /* BEGE WARM EXATO DA LOGO PARA O BODY */
+  --color-bg-alt: #f3e9d7;    /* CREME CLARO PARA SEÇÕES ALTERNADAS */
+  --color-card: #ffffff;      /* CARDS 100% BRANCOS CONFORME PEDIDO */
+  --color-card-border: rgba(201, 24, 43, 0.12);
 
-  --color-text: #1c1917;      /* CHARCOAL ESCURO */
-  --color-text-muted: #57534e;
+  --color-text: #1a1612;      /* TEXTO ESCURO NÍTIDO */
+  --color-text-muted: #52473c;
 
   --font-title: 'Playfair Display', Georgia, serif;
   --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -34,9 +34,9 @@
   --radius-lg: 20px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 4px 14px rgba(225, 29, 72, 0.05);
-  --shadow-md: 0 8px 25px rgba(225, 29, 72, 0.09);
-  --shadow-lg: 0 16px 40px rgba(225, 29, 72, 0.12);
+  --shadow-sm: 0 4px 14px rgba(26, 22, 18, 0.08);
+  --shadow-md: 0 8px 25px rgba(26, 22, 18, 0.12);
+  --shadow-lg: 0 16px 40px rgba(26, 22, 18, 0.16);
 
   --transition-fast: 0.25s ease;
   --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -99,16 +99,15 @@ button {
   padding: 0 1.25rem;
 }
 
-/* ==================== HEADER ==================== */
+/* ==================== HEADER (PURE WHITE) ==================== */
 .header {
   position: sticky;
   top: 0;
-  background: rgba(255, 253, 250, 0.96);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-primary-border);
+  background: #ffffff;
+  border-bottom: 1.5px solid var(--color-primary-border);
   z-index: 900;
   padding: 0.85rem 0;
-  box-shadow: 0 4px 20px rgba(225, 29, 72, 0.04);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .header-container {
@@ -137,7 +136,7 @@ button {
   background: transparent;
   padding: 0;
   border: none;
-  filter: drop-shadow(0 2px 8px rgba(225, 29, 72, 0.2));
+  filter: drop-shadow(0 2px 8px rgba(201, 24, 43, 0.2));
 }
 
 .brand-name {
@@ -181,7 +180,7 @@ button {
   align-items: center;
   width: 44px;
   height: 44px;
-  background: rgba(225, 29, 72, 0.08);
+  background: rgba(201, 24, 43, 0.08);
   border-radius: 10px;
   border: 1px solid var(--color-primary-border);
   cursor: pointer;
@@ -223,12 +222,12 @@ button {
 .btn-primary {
   background: var(--color-primary);
   color: #ffffff;
-  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.25);
+  box-shadow: 0 4px 14px rgba(201, 24, 43, 0.25);
 }
 .btn-primary:hover {
   background: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(225, 29, 72, 0.4);
+  box-shadow: 0 6px 20px rgba(201, 24, 43, 0.4);
 }
 
 .btn-whatsapp {
@@ -260,7 +259,7 @@ button {
 /* ==================== HERO SECTION ==================== */
 .hero {
   padding: 4.5rem 0 4rem;
-  background: linear-gradient(180deg, #fff0f3 0%, var(--color-bg) 100%);
+  background: linear-gradient(180deg, #f4ebe0 0%, var(--color-bg) 100%);
 }
 
 .hero-full-content {
@@ -349,19 +348,20 @@ button {
   color: var(--color-text-muted);
 }
 .trust-star {
-  background: rgba(225, 29, 72, 0.1);
+  background: #ffffff;
   color: var(--color-primary);
   font-weight: 800;
   padding: 0.2rem 0.6rem;
   border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
 }
 
 /* ==================== HIGHLIGHTS (INSTAGRAM CIRCLES) ==================== */
 .highlights-section {
   padding: 2rem 0;
-  background: var(--color-bg-alt);
-  border-top: 1px solid var(--color-primary-border);
-  border-bottom: 1px solid var(--color-primary-border);
+  background: #ffffff;
+  border-top: 1.5px solid var(--color-primary-border);
+  border-bottom: 1.5px solid var(--color-primary-border);
 }
 
 .highlights-title {
@@ -450,7 +450,7 @@ button {
 .gap-lg { gap: 2rem; }
 
 .flower-card, .gift-card {
-  background: var(--color-card);
+  background: #ffffff;
   border: 1.5px solid var(--color-card-border);
   border-radius: var(--radius-md);
   padding: 2.2rem 1.8rem;
@@ -529,7 +529,7 @@ button {
   gap: 0.85rem;
   font-size: 1.05rem;
 }
-.p-contact-item ion-icon { font-size: 1.8rem; color: var(--color-primary-light); }
+.p-contact-item ion-icon { font-size: 1.8rem; color: #f87171; }
 .p-contact-item strong { display: block; font-size: 0.9rem; color: #94a3b8; }
 .p-contact-item span { font-size: 1.2rem; font-weight: 800; color: #ffffff; }
 
@@ -565,7 +565,7 @@ button {
 .form-group select, .form-group textarea {
   width: 100%;
   padding: 0.85rem 1rem;
-  background: var(--color-bg);
+  background: #fdfaf6;
   border: 1.5px solid var(--color-card-border);
   border-radius: var(--radius-sm);
   color: var(--color-text);
@@ -578,77 +578,6 @@ button {
 .form-group select:focus, .form-group textarea:focus {
   border-color: var(--color-primary);
 }
-
-/* ==================== LOJA & LOCALIZAÇÃO ==================== */
-.store-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 3rem; align-items: center; }
-.store-details-list { display: flex; flex-direction: column; gap: 1.2rem; }
-.detail-item { display: flex; align-items: flex-start; gap: 0.85rem; }
-.detail-icon { font-size: 1.5rem; color: var(--color-primary); flex-shrink: 0; margin-top: 2px; }
-.detail-item strong { display: block; font-size: 0.98rem; color: var(--color-text); }
-.detail-item span { font-size: 0.92rem; color: var(--color-text-muted); }
-.map-card { background: #ffffff; border: 1.5px solid var(--color-card-border); border-radius: var(--radius-lg); padding: 0.6rem; box-shadow: var(--shadow-sm); }
-
-/* ==================== FOOTER ==================== */
-.footer { background: #1c1917; color: #ffffff; padding: 4rem 0 2rem; border-top: 1px solid var(--color-card-border); }
-.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1.2fr; gap: 3rem; margin-bottom: 3rem; }
-.footer-col h4 { font-family: var(--font-title); font-size: 1.15rem; font-weight: 700; color: #f43f5e; margin-bottom: 1.2rem; }
-.footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
-.footer-links a, .footer-links span { font-size: 0.92rem; color: #cbd5e1; transition: color var(--transition-fast); }
-.footer-links a:hover { color: #f43f5e; }
-.footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.8rem; text-align: center; font-size: 0.85rem; color: #94a3b8; }
-
-/* FLOATING WHATSAPP */
-.floating-whatsapp {
-  position: fixed; bottom: 24px; right: 24px; width: 60px; height: 60px;
-  background-color: var(--color-whatsapp); color: #ffffff; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center; font-size: 32px;
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45); z-index: 999; transition: transform var(--transition-fast);
-}
-.floating-whatsapp:hover { transform: scale(1.1); }
-
-/* RESPONSIVO MOBILE */
-@media (max-width: 768px) {
-  .burger { display: flex; }
-  .nav-wrapper {
-    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-    background: rgba(255, 253, 250, 0.98); backdrop-filter: blur(16px);
-    display: flex; flex-direction: column; justify-content: center; align-items: center;
-    opacity: 0; visibility: hidden; transform: translateY(-20px); transition: all 0.35s ease; z-index: 950; padding: 2rem;
-  }
-  .nav-wrapper.active { opacity: 1; visibility: visible; transform: translateY(0); }
-  .nav { flex-direction: column; align-items: center; gap: 1.8rem; width: 100%; max-width: 320px; }
-  .nav-link { font-size: 1.3rem; font-weight: 700; color: var(--color-text); }
-  .nav-cta { width: 100%; justify-content: center; font-size: 1.1rem; padding: 0.9rem; margin-top: 1rem; }
-
-  .hero { padding: 2.5rem 0 2rem; text-align: center; }
-  .hero-title { font-size: 2.1rem; line-height: 1.22; margin-bottom: 1rem; }
-  .hero-description { font-size: 0.98rem; margin-bottom: 1.5rem; padding: 0 0.5rem; }
-
-  .hero-pills-grid {
-    display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.65rem; width: 100%; margin-bottom: 1.8rem;
-  }
-
-  .pill-item {
-    justify-content: center; width: 100%; padding: 0.6rem 0.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);
-  }
-
-  .pill-text { font-size: 0.78rem; font-weight: 700; text-align: center; line-height: 1.2; }
-
-  .hero-actions { flex-direction: column; width: 100%; gap: 0.8rem; margin-bottom: 1.8rem; }
-  .hero-actions .btn { width: 100%; justify-content: center; font-size: 0.98rem; padding: 0.9rem 1.2rem; }
-
-  .hero-trust-badge { flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 0.4rem; }
-
-  .store-grid, .footer-grid, .grid-2, .grid-3, .form-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .highlights-scroll { justify-content: flex-start; padding: 0.5rem 0; }
-}
-
-@media (max-width: 480px) {
-  .hero-title { font-size: 1.9rem; }
-  .section-title { font-size: 1.7rem; }
-}
-
-
 
 /* ==================== CARROSSEL DE AVALIAÇÕES ==================== */
 .reviews-carousel-wrapper {
@@ -738,7 +667,7 @@ button {
   justify-content: center;
   font-size: 1.4rem;
   color: var(--color-text);
-  box-shadow: 0 4px 16px rgba(225, 29, 72, 0.15);
+  box-shadow: 0 4px 16px rgba(201, 24, 43, 0.15);
   z-index: 100 !important;
   cursor: pointer !important;
   pointer-events: auto !important;
@@ -753,14 +682,81 @@ button {
 .carousel-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1rem; }
 .carousel-dot {
   width: 10px; height: 10px; border-radius: 50%;
-  background: rgba(225, 29, 72, 0.2); cursor: pointer; transition: all var(--transition-fast);
+  background: rgba(201, 24, 43, 0.2); cursor: pointer; transition: all var(--transition-fast);
 }
 .carousel-dot.active { width: 26px; border-radius: 9999px; background: var(--color-primary); }
 
+/* ==================== LOJA & LOCALIZAÇÃO ==================== */
+.store-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 3rem; align-items: center; }
+.store-details-list { display: flex; flex-direction: column; gap: 1.2rem; }
+.detail-item { display: flex; align-items: flex-start; gap: 0.85rem; }
+.detail-icon { font-size: 1.5rem; color: var(--color-primary); flex-shrink: 0; margin-top: 2px; }
+.detail-item strong { display: block; font-size: 0.98rem; color: var(--color-text); }
+.detail-item span { font-size: 0.92rem; color: var(--color-text-muted); }
+.map-card { background: #ffffff; border: 1.5px solid var(--color-card-border); border-radius: var(--radius-lg); padding: 0.6rem; box-shadow: var(--shadow-sm); }
+
+/* ==================== FOOTER ==================== */
+.footer { background: #1a1612; color: #ffffff; padding: 4rem 0 2rem; border-top: 1px solid var(--color-card-border); }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1.2fr; gap: 3rem; margin-bottom: 3rem; }
+.footer-col h4 { font-family: var(--font-title); font-size: 1.15rem; font-weight: 700; color: #f87171; margin-bottom: 1.2rem; }
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+.footer-links a, .footer-links span { font-size: 0.92rem; color: #cbd5e1; transition: color var(--transition-fast); }
+.footer-links a:hover { color: #f87171; }
+.footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.8rem; text-align: center; font-size: 0.85rem; color: #94a3b8; }
+
+/* FLOATING WHATSAPP */
+.floating-whatsapp {
+  position: fixed; bottom: 24px; right: 24px; width: 60px; height: 60px;
+  background-color: var(--color-whatsapp); color: #ffffff; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 32px;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45); z-index: 999; transition: transform var(--transition-fast);
+}
+.floating-whatsapp:hover { transform: scale(1.1); }
+
+/* RESPONSIVO MOBILE */
 @media (max-width: 768px) {
+  .burger { display: flex; }
+  .nav-wrapper {
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    background: #ffffff; backdrop-filter: blur(16px);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    opacity: 0; visibility: hidden; transform: translateY(-20px); transition: all 0.35s ease; z-index: 950; padding: 2rem;
+  }
+  .nav-wrapper.active { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav { flex-direction: column; align-items: center; gap: 1.8rem; width: 100%; max-width: 320px; }
+  .nav-link { font-size: 1.3rem; font-weight: 700; color: var(--color-text); }
+  .nav-cta { width: 100%; justify-content: center; font-size: 1.1rem; padding: 0.9rem; margin-top: 1rem; }
+
+  .hero { padding: 2.5rem 0 2rem; text-align: center; }
+  .hero-title { font-size: 2.1rem; line-height: 1.22; margin-bottom: 1rem; }
+  .hero-description { font-size: 0.98rem; margin-bottom: 1.5rem; padding: 0 0.5rem; }
+
+  .hero-pills-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.65rem; width: 100%; margin-bottom: 1.8rem;
+  }
+
+  .pill-item {
+    justify-content: center; width: 100%; padding: 0.6rem 0.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);
+  }
+
+  .pill-text { font-size: 0.78rem; font-weight: 700; text-align: center; line-height: 1.2; }
+
+  .hero-actions { flex-direction: column; width: 100%; gap: 0.8rem; margin-bottom: 1.8rem; }
+  .hero-actions .btn { width: 100%; justify-content: center; font-size: 0.98rem; padding: 0.9rem 1.2rem; }
+
+  .hero-trust-badge { flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 0.4rem; }
+
   .review-card { flex: 0 0 85%; min-width: 85%; }
   .reviews-carousel-wrapper { padding: 0 38px; }
   .prev-btn { left: 0; }
   .next-btn { right: 0; }
   .review-nav-btn { width: 38px; height: 38px; font-size: 1.2rem; }
+
+  .store-grid, .footer-grid, .grid-2, .grid-3, .form-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .highlights-scroll { justify-content: flex-start; padding: 0.5rem 0; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.9rem; }
+  .section-title { font-size: 1.7rem; }
 }
