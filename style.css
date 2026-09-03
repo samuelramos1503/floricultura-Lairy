@@ -1,30 +1,30 @@
 /* ==========================================================================
-   FLORA LAILY FLORICULTURA — PALETA LOGO BEIGE & WHITE CARDS
+   FLORA LAILY FLORICULTURA — PALETA ELEGANTE (LOGOMARCA BEIGE & MAHOGANY MAROON)
    Fundo Body: Beige da Logo (#cbb692 / #c9b48e)
    Header & Cards: Pure White (#ffffff)
-   Destaques: Red Bloom (#c9182b / #d90429) & Botanical Green (#15803d)
-   Tipografia: Playfair Display & Plus Jakarta Sans
+   Subtítulos & Textos Especiais: Mahogany Maroon (#7a1723) & Forest Green (#166534)
+   Botões: Forest Green (#15803d) & Mahogany (#7a1723)
    ========================================================================== */
 
 :root {
-  --color-primary: #c9182b;
-  --color-primary-dark: #a61021;
-  --color-primary-light: #e0283c;
-  --color-primary-border: rgba(201, 24, 43, 0.18);
+  --color-primary: #7a1723;       /* MARROM MARROCOS / VINHO NOBRE DA LOGO */
+  --color-primary-dark: #5c0f18;
+  --color-primary-light: #942131;
+  --color-primary-border: rgba(122, 23, 35, 0.18);
   
-  --color-green: #15803d;
+  --color-green: #15803d;         /* VERDE BOTÂNICO NATURAL */
   --color-green-dark: #166534;
 
   --color-whatsapp: #25d366;
   --color-whatsapp-hover: #1eb954;
 
-  --color-bg: #cbb692;        /* BEGE WARM EXATO DA LOGO PARA O BODY */
-  --color-bg-alt: #f3e9d7;    /* CREME CLARO PARA SEÇÕES ALTERNADAS */
-  --color-card: #ffffff;      /* CARDS 100% BRANCOS CONFORME PEDIDO */
-  --color-card-border: rgba(201, 24, 43, 0.12);
+  --color-bg: #cbb692;            /* BEGE WARM DA LOGO */
+  --color-bg-alt: #f3e9d7;        /* CREME SUAVE ALTERNADO */
+  --color-card: #ffffff;          /* CARDS BRANCOS */
+  --color-card-border: rgba(122, 23, 35, 0.12);
 
-  --color-text: #1a1612;      /* TEXTO ESCURO NÍTIDO */
-  --color-text-muted: #52473c;
+  --color-text: #1a1612;          /* TEXTO ESCURO NÍTIDO */
+  --color-text-muted: #4a4035;
 
   --font-title: 'Playfair Display', Georgia, serif;
   --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -136,7 +136,7 @@ button {
   background: transparent;
   padding: 0;
   border: none;
-  filter: drop-shadow(0 2px 8px rgba(201, 24, 43, 0.2));
+  filter: drop-shadow(0 2px 8px rgba(122, 23, 35, 0.2));
 }
 
 .brand-name {
@@ -151,7 +151,7 @@ button {
 .brand-sub {
   font-size: 0.65rem;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-green-dark);
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -180,7 +180,7 @@ button {
   align-items: center;
   width: 44px;
   height: 44px;
-  background: rgba(201, 24, 43, 0.08);
+  background: rgba(122, 23, 35, 0.08);
   border-radius: 10px;
   border: 1px solid var(--color-primary-border);
   cursor: pointer;
@@ -222,12 +222,12 @@ button {
 .btn-primary {
   background: var(--color-primary);
   color: #ffffff;
-  box-shadow: 0 4px 14px rgba(201, 24, 43, 0.25);
+  box-shadow: 0 4px 14px rgba(122, 23, 35, 0.25);
 }
 .btn-primary:hover {
   background: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(201, 24, 43, 0.4);
+  box-shadow: 0 6px 20px rgba(122, 23, 35, 0.4);
 }
 
 .btn-whatsapp {
@@ -259,7 +259,7 @@ button {
 /* ==================== HERO SECTION ==================== */
 .hero {
   padding: 4.5rem 0 4rem;
-  background: linear-gradient(180deg, #f4ebe0 0%, var(--color-bg) 100%);
+  background: linear-gradient(180deg, #f3e9d7 0%, var(--color-bg) 100%);
 }
 
 .hero-full-content {
@@ -565,7 +565,7 @@ button {
 .form-group select, .form-group textarea {
   width: 100%;
   padding: 0.85rem 1rem;
-  background: #fdfaf6;
+  background: #fcf9f2;
   border: 1.5px solid var(--color-card-border);
   border-radius: var(--radius-sm);
   color: var(--color-text);
@@ -667,7 +667,7 @@ button {
   justify-content: center;
   font-size: 1.4rem;
   color: var(--color-text);
-  box-shadow: 0 4px 16px rgba(201, 24, 43, 0.15);
+  box-shadow: 0 4px 16px rgba(122, 23, 35, 0.15);
   z-index: 100 !important;
   cursor: pointer !important;
   pointer-events: auto !important;
@@ -682,7 +682,7 @@ button {
 .carousel-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1rem; }
 .carousel-dot {
   width: 10px; height: 10px; border-radius: 50%;
-  background: rgba(201, 24, 43, 0.2); cursor: pointer; transition: all var(--transition-fast);
+  background: rgba(122, 23, 35, 0.2); cursor: pointer; transition: all var(--transition-fast);
 }
 .carousel-dot.active { width: 26px; border-radius: 9999px; background: var(--color-primary); }
 
@@ -690,7 +690,7 @@ button {
 .store-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 3rem; align-items: center; }
 .store-details-list { display: flex; flex-direction: column; gap: 1.2rem; }
 .detail-item { display: flex; align-items: flex-start; gap: 0.85rem; }
-.detail-icon { font-size: 1.5rem; color: var(--color-primary); flex-shrink: 0; margin-top: 2px; }
+.detail-icon { font-size: 1.5rem; color: var(--color-green-dark); flex-shrink: 0; margin-top: 2px; }
 .detail-item strong { display: block; font-size: 0.98rem; color: var(--color-text); }
 .detail-item span { font-size: 0.92rem; color: var(--color-text-muted); }
 .map-card { background: #ffffff; border: 1.5px solid var(--color-card-border); border-radius: var(--radius-lg); padding: 0.6rem; box-shadow: var(--shadow-sm); }
@@ -698,10 +698,10 @@ button {
 /* ==================== FOOTER ==================== */
 .footer { background: #1a1612; color: #ffffff; padding: 4rem 0 2rem; border-top: 1px solid var(--color-card-border); }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1.2fr; gap: 3rem; margin-bottom: 3rem; }
-.footer-col h4 { font-family: var(--font-title); font-size: 1.15rem; font-weight: 700; color: #f87171; margin-bottom: 1.2rem; }
+.footer-col h4 { font-family: var(--font-title); font-size: 1.15rem; font-weight: 700; color: #cbb692; margin-bottom: 1.2rem; }
 .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
 .footer-links a, .footer-links span { font-size: 0.92rem; color: #cbd5e1; transition: color var(--transition-fast); }
-.footer-links a:hover { color: #f87171; }
+.footer-links a:hover { color: #cbb692; }
 .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.8rem; text-align: center; font-size: 0.85rem; color: #94a3b8; }
 
 /* FLOATING WHATSAPP */
