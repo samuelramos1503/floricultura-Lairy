@@ -151,7 +151,7 @@ button {
 .brand-sub {
   font-size: 0.65rem;
   font-weight: 800;
-  color: var(--color-green-dark);
+  color: var(--color-primary);
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
