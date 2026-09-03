@@ -1,0 +1,7 @@
+name = "flora-laily"
+main = "worker.js"
+compatibility_date = "2026-09-03"
+
+[assets]
+directory = "."
+exclude = [".git", ".git/**", "node_modules/**", "wrangler.toml", "package*.json"]
